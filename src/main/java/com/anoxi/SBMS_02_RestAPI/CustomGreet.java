@@ -24,7 +24,7 @@ public class CustomGreet {
     public ResponseEntity<String> welcome(@PathVariable("name") String name){
 
         String msg = name +", Welcome to our website";
-
-        return new ResponseEntity<>(msg , HttpStatus.NO_CONTENT);
+        System.out.println(msg);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
